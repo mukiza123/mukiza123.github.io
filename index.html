@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>OPINFINIA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lisette Mukiza Rwandan technologist building digital solutions for Africa's rural schools.">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>OPINFINIA-Empowering Africa's Future</title>
 </head>
 <body>
 
-    <header>
-        <h2 class="logo"> <span class="text">OP</span>INFINIA</h2>
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="mission.html">Mission</a>
-            <a href="testimonies.html">Testimonies</a>
-        </nav>
-        <a href="contact.css" class="btn-test">Contact</a>
-    </header>
+  <!-- ══ HEADER ══ -->
+  <header id="header">
+    <a href="index.html" class="logo"><span class="text">OP</span>INFINIA</a>
+    <nav class="navigation" id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="About.html">About</a>
+      <a href="mission.html">Mission</a>
+      <a href="testimonies.html">Testimonies</a>
+    </nav>
+    <a href="contact.html" class="btn-test">Contact</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <section class="home">
-        <div class="content">
-            <h2>Hi, I'm <span>Lisette Mukiza</span></h2>
-            <h4>Software enginneer</h4>
-            
-            <p>First-year ALCHE student building tech to unlock potential in Africa's rural schools. Turning overlooked talent into changemakers. Dog whisperer. Code enthusiast.</p>
-            
-           
+  <!-- ══ HERO ══ -->
+  <div class="home-outer">
+  <section class="home">
+    <div class="content fade-in">
+      <span class="section-label">Rwandan Technologist · ALCHE Student</span>
+      <h2>Hi, I'm <span>Lisette<br>Mukiza</span></h2>
+      <h4>Software Engineer</h4>
+      <p>Building tech solutions that reach beyond Rwanda's cities into rural classrooms and public schools across Africa, where brilliant minds often go unnoticed.</p>
 
-            
-            <div class="btn-group">
-                <a href="About.html">About me</a>
-                <a href="mission.html">Mission</a>
-            </div>
+      <div class="btn-group">
+        <a href="About.html">About me</a>
+        <a href="mission.html">My Mission</a>
+      </div>
 
-            <div class="social-icons">
-                <a href="https://github.com/lisette-lachiever"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lisette-mukiza/"><i class="fa-brands fa-square-linkedin"></i></a>
-                <a href="https://x.com/Li0898844116"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="mukizalisette@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-      
-        </div>
+      <div class="social-icons">
+        <a href="https://github.com/lisette-lachiever" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lisette-mukiza/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/Li0898844116" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:mukizalisette@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
 
-            <div class="image"> </div>
-    </section>
+    <div class="image fade-in" style="animation-delay:0.2s">
+      <img src="assests/lisette.jpg" alt="Lisette Mukiza">
+    </div>
+  </section>
+  </div>
 
-    <section class="mission-vision">
-        
-            <div class="box">
-            <h2>My <span class="text">Vision</span></h2>
-            <p>To see an Africa where technology-driven education empowers rural youth to rise as innovators, problem-solvers, and leaders shaping a continent of equal opportunity.</p>
-            </div>
-       
-            
-            <div class="box">
-                <h2>Mission</h2>
-                <p>To empower African youth in rural public schools with technology that unlocks their potential, transforms their talents into tangible opportunities, and equips them to become changemakers who uplift their communities and shape Africa's future.</p>
-            </div>
-        
-    
+  <!-- ══ VISION & MISSION ══ -->
+  <section class="mission-vision">
+    <div class="box reveal">
+      <h2>My <span class="text">Vision</span></h2>
+      <p>To see an Africa where technology-driven education empowers rural youth to rise as innovators, problem-solvers, and leaders shaping a continent of equal opportunity.</p>
+    </div>
+    <div class="box reveal">
+      <h2>Mission</h2>
+      <p>To empower African youth in rural public schools with technology that unlocks their potential, transforms their talents into tangible opportunities, and equips them to become changemakers who uplift their communities and shape Africa's future.</p>
+    </div>
+  </section>
 
-      
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>© 2025 OPINFINIA · <span class="gold">Empowering Africa's Future</span></p>
+  </footer>
 
-    
-    </section>
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
 
-    <footer>
-    <p>&copy 2025 OPFINIA | Empowering Africa's Future</p>
-    </footer>
-    
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

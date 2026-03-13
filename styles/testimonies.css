@@ -1,204 +1,220 @@
+/* ============================================================
+   TESTIMONIES PAGE — Purple Theme
+   ============================================================ */
 
-
-.hero {
-    padding: 5rem 0 3rem;
-    text-align: center;
-    background: linear-gradient(135deg, #f5f3f9 0%, #ffffff 100%);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.subtitle {
-    position: relative;
-    font-size: 1.2rem;
-    color: #666;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
-
-}
-
-
-.featured-video {
-    padding: 4rem 0;
-}
-
-.video-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.video-wrapper p{
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-  font-weight: 500;
-  font-family: "Baskervville", serif;
-  color: #777;
+.testimonies-hero {
+  padding: 160px 5% 90px;
+  background: linear-gradient(160deg, var(--purple-deep) 0%, var(--purple-dark) 100%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-
-.video-placeholder:hover {
-    transform: translateY(-5px);
+.testimonies-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--off-white);
+  clip-path: ellipse(55% 100% at 50% 100%);
 }
 
+.testimonies-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 60%, rgba(155,89,245,0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.testimonies-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.testimonies-hero h1 span { color: var(--purple-lt); font-style: italic; }
+
+.testimonies-hero .subtitle {
+  max-width: 580px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.68);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  position: relative;
+}
+
+/* Featured Video */
+.featured-video { padding: 80px 5% 60px; background: var(--off-white); }
+
+.featured-video h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--purple-deep);
+  margin-bottom: 2rem;
+}
+
+.video-wrapper { max-width: 900px; margin: 0 auto; }
+
+.video-placeholder {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16/9;
+}
+
+.video-placeholder iframe { width: 100%; height: 100%; border: none; display: block; }
 
 .video-caption {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-    color: #555;
-    font-weight: 500;
-}
-
-
-.testimonials {
-    padding: 4rem 0;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    color: #333;
-    margin-bottom: 3rem;
-    font-weight: 700;
-}
-.voice{
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-  font-weight: 500;
-  font-family: "Baskervville", serif;
-  color: #777;
+  margin-top: 1.2rem;
   text-align: center;
+  color: var(--mid-gray);
+  font-size: 0.94rem;
+  font-style: italic;
+}
 
+/* Testimonials */
+.testimonials { padding: 80px 5% 100px; background: var(--purple-bg); }
+
+.testimonials .section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--purple-deep);
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.testimonials .section-title span { color: var(--purple); font-style: italic; }
+
+.voice {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3.5rem;
+  color: var(--mid-gray);
+  font-size: 0.97rem;
+  line-height: 1.8;
 }
 
 .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .testimonial-card {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 30px;
-    border: 1px solid #e5e7eb;
-    margin-left: 60px;
-    margin-right: 60px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 1rem; right: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--lt-gray);
+  line-height: 1;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 35px rgba(139, 122, 184, 0.15);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 1.5rem;
-    overflow: hidden;
-  
+  width: 66px; height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--purple);
+  margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
-.profile-image img {
-    width: 100%;
-    height: 90%;
-    object-fit: contain;
-}
+.profile-image img { width: 100%; height: 100%; object-fit: cover; }
 
 .testimonial-card h3 {
-    font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--purple-deep);
+  margin-bottom: 0.2rem;
 }
 
 .role {
-    color: #7d2ae8;
-    font-size: 0.95rem;
-    margin-bottom: 1.2rem;
-    font-weight: 500;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 1rem;
 }
 
-.quote {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-style: italic;
+.quote { color: var(--mid-gray); font-size: 0.93rem; line-height: 1.85; font-style: italic; }
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-dark) 100%);
+  padding: 80px 5%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-
-.cta {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #7d2ae8 0%);
-    color: white;
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(155,89,245,0.15) 0%, transparent 60%);
+  pointer-events: none;
 }
 
-.cta-content {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+.cta-content { position: relative; }
+
+.cta-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
-.cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-
-.cta p {
-    font-size: 1.15rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-    opacity: 0.95;
+.cta-content p {
+  max-width: 540px;
+  margin: 0 auto 2.2rem;
+  color: rgba(255,255,255,0.68);
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 1rem 3rem;
-    background-color: white;
-    color: #7d2ae8;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--purple);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: var(--transition);
 }
 
 .cta-button:hover {
-    background-color: black;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: var(--purple);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(123,47,247,0.3);
 }
 
-
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #f8f8f8;
-  color: #777;
-  font-size: 0.9rem;
+@media (max-width: 900px) {
+  .testimonial-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 }

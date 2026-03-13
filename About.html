@@ -1,164 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>About-OPINFINIA</title>
 </head>
 <body>
 
-    <header>
-        <h2 class="logo"> <span class="text">OP</span>INFINIA</h2>
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="mission.html">Mission</a>
-            <a href="testimonies.html">Testimonies</a>
-        </nav>
-        <a href="contact.html" class="btn-test">Contact</a>
-    </header>
+  <header id="header">
+    <a href="index.html" class="logo"><span class="text">OP</span>INFINIA</a>
+    <nav class="navigation" id="nav">
+      <a href="index.html">Home</a>
+      <a href="About.html" class="active">About</a>
+      <a href="mission.html">Mission</a>
+      <a href="testimonies.html">Testimonies</a>
+    </nav>
+    <a href="contact.html" class="btn-test">Contact</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <section class="home">
-        <div class="content">
+  <!-- Bio + Image -->
+  <div class="about-hero-outer">
+  <section class="about-hero">
+    <div class="about-content fade-in">
+      <span class="section-label">About Me</span>
+      <h2>About <span>Me.</span></h2>
+      <p>I'm Lisette Mukiza, a Rwandan technologist and first-year student at ALCHE, driven by a simple belief: every child deserves the chance to turn their potential into power.</p>
+      <p>I build digital solutions that reach beyond Rwanda's cities into rural classrooms and public schools across Africa places where brilliant minds often go unnoticed. My work focuses on creating accessible technology that helps young people discover their talents, seize opportunities, and become the changemakers their communities need.</p>
+      <p>I believe the future of Africa isn't just in our capitals; it's in every village, every school, and every child who has been told to dream smaller. My goal is to prove them wrong, one solution at a time.</p>
+      <p>When I'm not coding or strategising the next project, you'll find me talking to my plants (surprisingly good debugging partners) or whispering wisdom to dogs (better listeners than most humans).</p>
+      <p class="tagline">Let's build a smarter, more connected Africa together.</p>
+    </div>
 
-            
+    <div class="image-about fade-in" style="animation-delay:0.2s">
+      <img src="assests/Lisette3.png" alt="Lisette Mukiza">
+    </div>
+  </section>
+  </div>
 
-            <h2>About <span>Me.</span></h2>
-            <p>I'm Lisette Mukiza, a Rwandan technologist and first-year student at ALCHE, driven by a simple belief: every child deserves the chance to turn their potential into power.</p>
-            <p>I build digital solutions that reach beyond Rwanda's cities into rural classrooms and public schools across Africa places where brilliant minds often go unnoticed. My work focuses on creating accessible technology that helps young people discover their talents, seize opportunities, and become the changemakers their communities need.</p>
-            <p>I believe the future of Africa isn't just in our capitals; it's in every village, every school, and every child who has been told to dream smaller. My goal is to prove them wrong, one solution at a time.</p>
-            <p>When I'm not coding or strategizing the next project, you'll find me talking to my plants (they're surprisingly good debugging partners) or whispering wisdom to dogs (they're better listeners than most humans)</p>
-            
-            <h4>Let's build a smarter, more connected Africa together.</h4>
+  <!-- Skills -->
+  <section class="skills-section-wrapper">
+    <div class="section-header reveal">
+      <span class="section-label">What I Bring</span>
+      <h1>My <span>Skills</span></h1>
+    </div>
 
+    <div class="skills-grid">
+      <div class="skills-section reveal">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Python</span><span class="skill-percentage">80%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="80"></div></div>
         </div>
-
-            <div class="image-about">
-                <img src="/assests/Lisette3.png" alt="">
-             </div>
-
-    </section>
-
-     <h1>My <span class="highlight">Skills</span></h1>
-
-     <div class="skills-wrapper">
-            <!-- Coding Skills Section -->
-            <section class="skills-section">
-                <h2>Technical Skills</h2>
-                
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percentage">65%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 65%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percentage">30%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 30%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">C++</span>
-                        <span class="skill-percentage">60%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 60%"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Professional Skills Section -->
-            <section class="skills-section">
-                <h2>Soft Skills</h2>
-                
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Leadership and Teamwork</span>
-                        <span class="skill-percentage">87%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 87%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Problem-solving</span>
-                        <span class="skill-percentage">84%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 84%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Critical thinking</span>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 85%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Project management</span>
-                        <span class="skill-percentage">73%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 73%"></div>
-                    </div>  
-                </div>
-
-                 <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Communicating for Impact</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar" style="width: 90%"></div>
-                    </div>  
-                </div>
-
-            </section>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-percentage">70%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="70"></div></div>
         </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-percentage">65%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">C++</span><span class="skill-percentage">60%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percentage">30%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="30"></div></div>
+        </div>
+      </div>
 
-          <footer>
-          <p>&copy 2025 OPFINIA | Empowering Africa's Future</p>
-          </footer>
-    
+      <div class="skills-section reveal" style="transition-delay:0.15s">
+        <h2>Soft Skills</h2>
+
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Communicating for Impact</span><span class="skill-percentage">90%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Leadership &amp; Teamwork</span><span class="skill-percentage">87%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="87"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Critical Thinking</span><span class="skill-percentage">85%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Problem-solving</span><span class="skill-percentage">84%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="84"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">Project Management</span><span class="skill-percentage">73%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-width="73"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 OPINFINIA · <span class="accent">Empowering Africa's Future</span></p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('.skill-bar').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

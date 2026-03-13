@@ -1,49 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>OPINFINIA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Lisette Mukiza OPINFINIA.">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contact-OPINFINIA</title>
 </head>
 <body>
 
-    <header>
-        <h2 class="logo"> <span class="text">OP</span>INFINIA</h2>
-        <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="mission.html">Mission</a>
-            <a href="testimonies.html">Testimonies</a>
-        </nav>
-        <a href="contact.html" class="btn-test">Contact</a>
-    </header>
+  <!-- HEADER -->
+  <header id="header">
+    <a href="index.html" class="logo"><span class="text">OP</span>INFINIA</a>
+    <nav class="navigation" id="nav">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="mission.html">Mission</a>
+      <a href="testimonies.html">Testimonies</a>
+    </nav>
+    <a href="contact.html" class="btn-test">Contact</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                <h2>Get in  touch</h2>
-                <hr>
+  <!-- HERO BANNER -->
+  <section class="contact-hero">
+    <span class="section-label fade-in">Say Hello</span>
+    <h1 class="fade-in">Get in <span>Touch.</span></h1>
+    <p class="fade-in">Whether you want to collaborate, support the mission, or simply say hello I'd love to hear from you.</p>
+  </section>
+
+  <!-- CONTACT BODY -->
+  <section class="contact-body">
+    <div class="contact-grid">
+
+      <!-- Left: info -->
+      <div class="contact-info reveal">
+        <h2>Let's Connect</h2>
+        <p class="info-sub">I'm always open to new conversations, partnerships, and ideas that push Africa's education forward.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>mukizalisette@gmail.com</span>
             </div>
-            <input type="hidden" name="access_key" value="0f71bebe-8876-4630-a1c9-2e045914669f">
-            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>            
-            <input type="text" name="email" placeholder="Your email" class="contact-inputs" required>
-            <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
-            <button type="submit">submit</button>
-        </form>
-
-        <div class="contact-right">
-            <img src="/assests/message.jpg" alt="">
+          </div>
+          <div class="contact-detail-item">
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/lisette-mukiza</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/lisette-lachiever</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Location</strong>
+              <span>Rwanda, Africa</span>
+            </div>
+          </div>
         </div>
 
+        <div class="contact-socials">
+          <a href="https://github.com/lisette-lachiever" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/lisette-mukiza/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/Li0898844116" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="mailto:mukizalisette@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap reveal" style="transition-delay:0.15s">
+        <h2>Send a Message</h2>
+        <p class="form-sub">I'll get back to you as soon as possible.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="0f71bebe-8876-4630-a1c9-2e045914669f">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Amara Jean" class="contact-inputs" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" class="contact-inputs" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" class="contact-inputs">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me what's on your mind..." class="contact-inputs" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
 
     </div>
+  </section>
 
-    <footer>
-    <p>&copy 2025 OPFINIA | Empowering Africa's Future</p>
-    </footer>
-    
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 OPINFINIA · <span class="accent">Empowering Africa's Future</span></p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
